@@ -1,0 +1,23 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.iphone1 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 30vw;
+}
+
+.iphone1  img{
+    width: 32vw;
+    height: 45vw;
+    object-fit: contain;
+}
+
+.parent {
+    width: 25vw;
+    background-color: antiquewhite;
+
+}
