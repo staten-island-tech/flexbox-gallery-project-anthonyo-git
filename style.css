@@ -1,23 +1,23 @@
 body {
-    margin: 0;
-    padding: 0;
+    margin: auto;
+    padding: auto;
 }
 
-.iphone1 {
+
+.flex-container {
     display: flex;
-    align-items: center;
-    flex-direction: column;
-    height: 30vw;
+    height: 50vw;
+    flex-flow: column wrap;
+    background-color: gainsboro;
+    align-content: space-between;
+
 }
 
-.iphone1  img{
-    width: 32vw;
-    height: 45vw;
-    object-fit: contain;
-}
-
-.parent {
-    width: 25vw;
-    background-color: antiquewhite;
-
+.flex-container img {
+    background-color: #fff;
+    width: 10vw;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
 }
