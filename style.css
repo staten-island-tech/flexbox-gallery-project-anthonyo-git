@@ -6,18 +6,25 @@ body {
 
 .flex-container {
     display: flex;
-    height: 50vw;
-    flex-flow: column wrap;
-    background-color: gainsboro;
-    align-content: space-between;
-
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
 }
+
+
 
 .flex-container img {
-    background-color: #fff;
-    width: 10vw;
-    margin: 10px;
-    text-align: center;
-    line-height: 75px;
-    font-size: 30px;
+    flex: 0 0 33.33%;
+    height: 33.33vh;
+    box-sizing: border-box;
+    padding: 10px;
 }
+
+@media (max-width: 600px) {
+    .box {
+      flex: 0 0 100%;
+      height: 33.33vh;
+    }
+  }
