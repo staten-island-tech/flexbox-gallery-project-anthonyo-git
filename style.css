@@ -10,11 +10,11 @@
   }
 
 .cell {
-    justify-content: start;
     border: 1px solid black;
-    width: 33%;
+    width: 25%;
     margin: 10px;
     align-items: center;
+    object-fit: cover;
 }
 
 
@@ -30,6 +30,7 @@
 }
 
 .text-container {
-display: flex;
-align-items: center;
+    display: flex;
+    position: relative;
+
 }
