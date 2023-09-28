@@ -3,14 +3,56 @@
   flex-flow: row wrap;
   justify-content: center;
   font-size: larger;
-  font-family: 'Times New Roman', Times, serif
+  font-family: 'Times New Roman', Times, serif;
 }
 
 .cell {
-  border: 1px solid black;
+  background-image: linear-gradient(#ffffff, #999999);
   width: 20vw;
   margin: 10px;
   box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.5);
+  transition: 0.5s linear;
+}
+
+.cell:hover {
+  background-image: linear-gradient(#ffffff, #637272);
+  transform: scale(1.25);
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.cell:nth-child(14):hover,
+.cell:nth-child(10):hover,
+.cell:nth-child(6):hover,
+.cell:nth-child(2):hover {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.cell:nth-child(15):hover,
+.cell:nth-child(11):hover,
+.cell:nth-child(7):hover,
+.cell:nth-child(3):hover {
+  opacity: 0;
+  animation: fade 1s forwards;
+}
+
+.cell:nth-child(16):hover,
+.cell:nth-child(12):hover,
+.cell:nth-child(8):hover,
+.cell:nth-child(4):hover {
+  border: 12px solid black;
 }
 
 .flex-container img {
@@ -19,10 +61,7 @@
   padding: 10px;
   margin-left: auto;
   margin-right: auto;
-}
-
-.cell:hover {
-  background-color: aqua;
+  filter: grayscale(40%);
 }
 
 .flex-container p {
