@@ -8,7 +8,7 @@
 
 .cell {
   background-image: linear-gradient(#ffffff, #999999);
-  width: 20vw;
+  width: 20%;
   margin: 10px;
   box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.5);
   transition: 0.5s linear;
@@ -26,7 +26,6 @@
 
 .cell:nth-child(14):hover,
 .cell:nth-child(10):hover,
-.cell:nth-child(6):hover,
 .cell:nth-child(2):hover {
   animation: spin 1s linear infinite;
 }
@@ -57,7 +56,7 @@
 
 .flex-container img {
   height: 33vh;
-  width: 33vh;
+  width: 15vw;
   padding: 10px;
   margin-left: auto;
   margin-right: auto;
@@ -72,11 +71,13 @@
   display: flex;
 }
 
+.cell:nth-child(6):hover .overlay,
 .cell:nth-child(5):hover .overlay {
   visibility: visible;
   opacity: 1;
 }
 
+.cell:nth-child(6):hover .popup,
 .cell:nth-child(5):hover .popup {
   background-color: antiquewhite;
 }
@@ -94,10 +95,9 @@
 }
 
 .popup {
-  margin: 64px auto;
+  margin: 64px;
   padding: 20px;
   border-radius: 5px;
   width: 50%;
   transition: all 3s ease-in-out;
-  justify-content: center;
 }
