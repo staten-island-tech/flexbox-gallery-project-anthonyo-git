@@ -71,13 +71,11 @@
   display: flex;
 }
 
-.cell:nth-child(6):hover .overlay,
 .cell:nth-child(5):hover .overlay {
   visibility: visible;
   opacity: 1;
 }
 
-.cell:nth-child(6):hover .popup,
 .cell:nth-child(5):hover .popup {
   background-color: antiquewhite;
 }
@@ -100,4 +98,20 @@
   border-radius: 5px;
   width: 50%;
   transition: all 3s ease-in-out;
+}
+
+.cell:nth-child(6) {
+  animation: animation 2s infinite;
+}
+
+@keyframes animation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
